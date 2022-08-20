@@ -55,9 +55,21 @@ scoreboard players set .query invparse 2
 function invparse:update
 ```
 
+## Optimization
+
+you can also try optimizing by just quering only hotbar and left hand.
+
+- `query_hotbar.mcfunction` : query only hotbar and left hand.
+
+```mcfunction
+# e.g
+scoreboard players set .query invparse 3
+function invparse:query_hotbar
+```
+
 ## Version
 
-initial commit version 0.0.0
+added query optimizing options. 0.1.0
 
 ## License
 
